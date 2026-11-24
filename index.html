@@ -3,20 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kewal Dhungel</title>
+    <title>Kewal | Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="portfolio">
 
     <!-- Header -->
     <header class="header">
-        <a href="#home" class="logo">Kewal</a>
-
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
+        <nav class="navbar" aria-label="Primary navigation">
+            <a href="#home" class="active" aria-current="location">Home</a>
             <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -24,272 +21,304 @@
     <main>
         <!-- Hero Section -->
         <section class="home" id="home">
-            <div class="home-content">
-                <h1>Hi, I'm Kewal Dhungel</h1>
-                <h2><b>Computer Engineering Student</b></h2>
-                <p>
-                    Learning web development, programming, DSA
-                    and building projects to improve my skills.
-                </p>
+            <div class="home-content" data-reveal>
+                <h1 class="home-greeting">Hi, I'm Kewal.</h1>
+                <p class="home-role">Computer Engineering Student</p>
+                <h2>Building Ideas Into Digital Experiences.</h2>
 
-                <a href="#projects" class="btn">Explore My Work</a>
-            </div>
-
-            <div class="home-image">
-                <img src="Images/profile1.jpg" alt="Kewal's profile photo">
-            </div>
-        </section>
-
-        <!-- About -->
-        <section class="about-page" id="about">
-            <div class="about-image">
-                <img src="Images/profile2.jpg" alt="Kewal's profile photo">
-            </div>
-
-            <div class="about-content">
-                <p class="intro">GET TO KNOW ME</p>
-
-                <h1>About <span>Me</span></h1>
-
-                <p>
-                    Hello! I'm Kewal, a Computer Engineering student
-                    passionate about technology, programming, and
-                    building useful digital solutions.
-                </p>
-
-                <p>
-                    I'm currently developing my skills in C++,
-                    web development and problem-solving. I believe
-                    in learning through practice and creating
-                    projects that turn ideas into reality.
-                </p>
-
-                <p>
-                    My goal is to explore different areas of
-                    technology, improve continuously and become
-                    a skilled software developer.
-                </p>
-
-                <a href="#contact" class="btn">Contact Me</a>
-            </div>
-        </section>
-
-        <!-- Skills -->
-        <section class="skills-page" id="skills">
-            <div class="skills-content">
-                <p class="intro">WHAT I'M LEARNING</p>
-
-                <h1>My <span>Skills</span></h1>
-
-                <h2>Technologies and Tools</h2>
-
-                <p>
-                    I'm continuously improving my programming and
-                    development skills through practice and projects.
-                </p>
-
-                <div class="skills-list">
-                    <div class="skill">
-                        <h3>C | C++</h3>
-                        <p>Programming Fundamentals and OOP</p>
-                    </div>
-
-                    <div class="skill">
-                        <h3>HTML | CSS | JavaScript</h3>
-                        <p>Web Development Fundamentals (In Progress) </p>
-                    </div>
-
-                    <div class="skill">
-                        <h3>Data Structures and Algorithms</h3>
-                        <p>Learning DSA one problem at a time, <br>
-                        building strong logic and growing as a problem solver. </p>
-                    </div>
-
-                    <div class="skill">
-                        <h3>Git &amp; GitHub</h3>
-                        <p>Version control and website hosting</p>
-                    </div>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn">Explore My Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
                 </div>
+            </div>
+
+            <div class="home-portrait-frame" data-reveal>
+                <img class="home-portrait" src="Images/profile.png" alt="Portrait of Kewal">
             </div>
         </section>
 
         <!-- Projects -->
         <section class="projects-page" id="projects">
-            <section class="projects-intro">
-                <p class="intro">MY WORK &amp; LEARNING JOURNEY</p>
-                <h1>Featured <span>Projects</span></h1>
-                <p class="description">
-                    Here are some of the things I've built while
-                    exploring programming and web development.
-                    Each project helps me learn something new.
-                </p>
-            </section>
+            <div class="projects-intro" data-reveal>
+                <p class="intro">SELECTED WORK</p>
+                <h2>Featured <span>Projects</span></h2>
+            </div>
 
-            <section class="project-grid">
-                <article class="project-card">
+            <section class="project-grid" aria-label="Featured projects">
+                <article class="project-card" data-reveal>
                     <div class="project-number">01 / AGRICULTURE</div>
 
-                    <div class="project-icon">
+                    <div class="project-visual project-visual--agriveya">
                         <img
                             class="project-logo"
                             src="https://raw.githubusercontent.com/userkewal64/AgriVeya/898f5901ac518678811f68433206dbb424292548/Frontend/agrivia-logo.png"
-                            alt="AgriVeya logo">
+                            alt="AgriVeya logo"
+                            loading="lazy"
+                            decoding="async">
                     </div>
 
-                    <h2>AgriVeya</h2>
+                    <h3>AgriVeya</h3>
 
                     <p>
-                        A climate-informed agricultural decision-support platform that helps explore crop rotation strategies using climate data, regional crop information and soil-health considerations.
+                        A climate-informed agricultural decision-support platform that helps explore crop rotation strategies using climate data, regional crop information, and soil-health considerations.
                     </p>
 
                     <div class="tech-stack">
-                        <span>Climate Data</span>
-                        <span>Crop Rotation</span>
-                        <span>Soil Health</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>NASA POWER API</span>
                     </div>
 
                     <div class="project-links">
+                        <a href="https://agriveya.pages.dev/"
+                           target="_blank" rel="noopener noreferrer"
+                           aria-label="Open AgriVeya live demo in a new tab">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3ZM5 5h6v2H5v12h12v-6h2v8H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/></svg>
+                            Live Demo
+                        </a>
                         <a href="https://github.com/userkewal64/AgriVeya"
-                           target="_blank" rel="noopener noreferrer">
-                            Repository ↗
+                           target="_blank" rel="noopener noreferrer"
+                           aria-label="Open AgriVeya GitHub repository in a new tab">
+                            <img src="https://cdn.simpleicons.org/github/181717" alt="" loading="lazy">
+                            Repository
                         </a>
                     </div>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card" data-reveal>
                     <div class="project-number">02 / BUSINESS WEBSITE</div>
 
-                    <div class="project-icon">
+                    <div class="project-visual project-visual--safal">
                         <img
                             class="project-logo"
                             src="https://raw.githubusercontent.com/userkewal64/SafalMauriPalan/a672c23ca91479c98f68517488429ba256787f96/Images/logo.png"
-                            alt="Safal Mauri Palan logo">
+                            alt="Safal Mauri Palan logo"
+                            loading="lazy"
+                            decoding="async">
                     </div>
 
-                    <h2>Safal Mauri Palan</h2>
+                    <h3>Safal Mauri Palan</h3>
 
                     <p>
-                        A bilingual business website for a beekeeping enterprise, showcasing honey products, beekeeping services and business information through a user-friendly digital platform.
+                        A bilingual business website for a beekeeping enterprise, showcasing honey products, beekeeping services, and business information.
                     </p>
 
                     <div class="tech-stack">
-                        <span>Bilingual Website</span>
-                        <span>Honey Products</span>
-                        <span>Beekeeping Services</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>JSON-LD</span>
                     </div>
 
                     <div class="project-links">
                         <a href="https://safalmauripalan.com.np/"
-                           target="_blank" rel="noopener noreferrer">
-                            Live Website ↗
+                           target="_blank" rel="noopener noreferrer"
+                           aria-label="Open Safal Mauri Palan website in a new tab">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3ZM5 5h6v2H5v12h12v-6h2v8H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/></svg>
+                            Live Website
                         </a>
-
                         <a href="https://github.com/userkewal64/SafalMauriPalan"
-                           target="_blank" rel="noopener noreferrer">
-                            Repository ↗
+                           target="_blank" rel="noopener noreferrer"
+                           aria-label="Open Safal Mauri Palan GitHub repository in a new tab">
+                            <img src="https://cdn.simpleicons.org/github/181717" alt="" loading="lazy">
+                            Repository
                         </a>
                     </div>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card" data-reveal>
                     <div class="project-number">03 / CURRENCY PLATFORM</div>
 
-                    <div class="project-icon">
+                    <div class="project-visual project-visual--ratestrend">
                         <img
                             class="project-logo"
                             src="https://raw.githubusercontent.com/userkewal64/RatesTrend/f5d8f3c603328302af99570185a7cb71c61f3f64/ratestrend-logo.svg"
-                            alt="RatesTrend logo">
+                            alt="RatesTrend logo"
+                            loading="lazy"
+                            decoding="async">
                     </div>
 
-                    <h2>RatesTrend</h2>
+                    <h3>RatesTrend</h3>
 
                     <p>
-                        A currency exchange platform that provides real-time rate exploration, currency conversion, historical trends and interactive currency comparisons.
+                        A currency exchange platform for exploring exchange rates, converting currencies, and understanding historical trends.
                     </p>
 
                     <div class="tech-stack">
-                        <span>Real-Time Rates</span>
-                        <span>Currency Conversion</span>
-                        <span>Historical Trends</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Exchange Rate APIs</span>
                     </div>
 
                     <div class="project-links">
+                        <a href="https://ratestrend.pages.dev/"
+                           target="_blank" rel="noopener noreferrer"
+                           aria-label="Open RatesTrend live demo in a new tab">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3ZM5 5h6v2H5v12h12v-6h2v8H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/></svg>
+                            Live Demo
+                        </a>
                         <a href="https://github.com/userkewal64/RatesTrend"
-                           target="_blank" rel="noopener noreferrer">
-                            Repository ↗
+                           target="_blank" rel="noopener noreferrer"
+                           aria-label="Open RatesTrend GitHub repository in a new tab">
+                            <img src="https://cdn.simpleicons.org/github/181717" alt="" loading="lazy">
+                            Repository
                         </a>
                     </div>
                 </article>
             </section>
 
-            <section class="github-cta">
-                <h2>Want to see more?</h2>
-                <p>Explore my repositories and follow my learning journey.</p>
-
+            <div class="github-cta" data-reveal>
+                <p>More of my work</p>
                 <a href="https://github.com/userkewal64"
                    target="_blank" rel="noopener noreferrer"
-                   class="github-button">
-                    Visit My GitHub ↗
+                   class="github-button"
+                   aria-label="Visit Kewal's GitHub profile in a new tab">
+                    <img src="https://cdn.simpleicons.org/github/FFFFFF" alt="" loading="lazy">
+                    GitHub
                 </a>
-            </section>
+            </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="skills-page" id="skills">
+            <div class="skills-content">
+                <p class="intro">MY TOOLKIT</p>
+                <h2>Technical Skills</h2>
+
+                <div class="skill-groups">
+                    <section class="skill-category" data-reveal>
+                        <h3>Programming Languages</h3>
+                        <ul class="skill-grid">
+                            <li class="skill-item">
+                                <img src="https://cdn.simpleicons.org/c/00599C" alt="" loading="lazy" decoding="async">
+                                <span>C</span>
+                            </li>
+                            <li class="skill-item">
+                                <img src="https://cdn.simpleicons.org/cplusplus/00599C" alt="" loading="lazy" decoding="async">
+                                <span>C++</span>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="skill-category" data-reveal>
+                        <h3>Frontend Development</h3>
+                        <ul class="skill-grid">
+                            <li class="skill-item">
+                                <img src="https://cdn.simpleicons.org/html5/E34F26" alt="" loading="lazy" decoding="async">
+                                <span>HTML5</span>
+                            </li>
+                            <li class="skill-item">
+                                <img src="https://cdn.simpleicons.org/css/1572B6" alt="" loading="lazy" decoding="async">
+                                <span>CSS3</span>
+                            </li>
+                            <li class="skill-item">
+                                <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="" loading="lazy" decoding="async">
+                                <span>JavaScript</span>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="skill-category" data-reveal>
+                        <h3>Backend Development</h3>
+                        <ul class="skill-grid">
+                            <li class="skill-item">
+                                <img src="https://cdn.simpleicons.org/nodedotjs/339933" alt="" loading="lazy" decoding="async">
+                                <span>Node.js</span>
+                            </li>
+                            <li class="skill-item">
+                                <img src="https://cdn.simpleicons.org/express/000000" alt="" loading="lazy" decoding="async">
+                                <span>Express.js</span>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="skill-category" data-reveal>
+                        <h3>Tools and Technologies</h3>
+                        <ul class="skill-grid">
+                            <li class="skill-item">
+                                <img src="https://cdn.simpleicons.org/git/F05032" alt="" loading="lazy" decoding="async">
+                                <span>Git</span>
+                            </li>
+                            <li class="skill-item">
+                                <img src="https://cdn.simpleicons.org/github/181717" alt="" loading="lazy" decoding="async">
+                                <span>GitHub</span>
+                            </li>
+                            <li class="skill-item">
+                                <img src="https://cdn.simpleicons.org/json/000000" alt="" loading="lazy" decoding="async">
+                                <span>JSON-LD</span>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
         </section>
 
         <!-- Contact -->
         <section class="page contact-page" id="contact">
-            <h1>Contact <span>Me</span></h1>
-            <p class="subtitle">
-                Have a project idea or want to connect? Let's talk.
-            </p>
+            <div class="contact-content" data-reveal>
+                <p class="intro">SAY HELLO</p>
+                <h2>Let's Connect.</h2>
+                <p class="subtitle">Have an idea or want to collaborate? Feel free to reach out.</p>
 
-            <div class="card contact-card">
-                <h2>Get in Touch</h2>
-
-                <p>
-                    Email:
-                    <a href="https://mail.google.com/mail/?view=cm&amp;to=kewaldhungel321@gmail.com">
-                        kewaldhungel64@gmail.com
+                <div class="contact-methods">
+                    <a class="contact-method contact-method--gmail" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=kewaldhungel64@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Gmail" aria-haspopup="menu" aria-controls="gmail-copy-menu" title="Email Kewal">
+                        <span class="contact-icon" aria-hidden="true">
+                            <img src="https://cdn.simpleicons.org/gmail/EA4335" alt="" loading="lazy" decoding="async">
+                        </span>
+                        <span>Gmail</span>
                     </a>
-                </p>
-
-                <p>
-                    Linked In:
-                    <a href="https://www.linkedin.com/in/kewal-dhungel-78097a371/"
-                       target="_blank" rel="noopener noreferrer">
-                        Kewal Dhungel
+                    <a class="contact-method" href="https://github.com/userkewal64" target="_blank" rel="noopener noreferrer" aria-label="Visit Kewal's GitHub profile in a new tab">
+                        <span class="contact-icon" aria-hidden="true">
+                            <img src="https://cdn.simpleicons.org/github/181717" alt="" loading="lazy">
+                        </span>
+                        <span>GitHub</span>
                     </a>
-                </p>
-
-                <p>
-                    Whatsapp:
-                    <a href="https://wa.me/9779749245832"
-                       target="_blank" rel="noopener noreferrer">
-                        9749245832
+                    <a class="contact-method" href="https://www.linkedin.com/in/kewal-dhungel-78097a371/" target="_blank" rel="noopener noreferrer" aria-label="Visit Kewal's LinkedIn profile in a new tab">
+                        <span class="contact-icon" aria-hidden="true">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="" loading="lazy">
+                        </span>
+                        <span>LinkedIn</span>
                     </a>
-                </p>
-
-                <p>
-                    GitHub:
-                    <a href="https://github.com/userkewal64"
-                       target="_blank" rel="noopener noreferrer">
-                        Visit Profile
+                    <a class="contact-method" href="https://wa.me/9779749245832" target="_blank" rel="noopener noreferrer" aria-label="Contact Kewal on WhatsApp in a new tab">
+                        <span class="contact-icon" aria-hidden="true">
+                            <img src="https://cdn.simpleicons.org/whatsapp/25D366" alt="" loading="lazy">
+                        </span>
+                        <span>WhatsApp</span>
                     </a>
-                </p>
-
-                <p>
-                    Website:
-                    <a href="https://safalmauripalan.com.np/"
-                       target="_blank" rel="noopener noreferrer">
-                        Safal Mauri Palan
-                    </a>
-                </p>
-
-                <p>
-                    I'm always interested in learning, collaborating
-                    and building useful projects.
-                </p>
+                </div>
+                <div class="gmail-copy-menu" id="gmail-copy-menu" role="menu" hidden>
+                    <button class="gmail-copy-menu-action" type="button" role="menuitem" data-copy-email="kewaldhungel64@gmail.com">Copy Gmail address</button>
+                </div>
+                <p class="copy-feedback" id="gmail-copy-status" role="status" aria-live="polite" aria-atomic="true"></p>
             </div>
         </section>
     </main>
 
+    <footer class="site-footer">
+        <div class="footer-content" data-reveal>
+            <a href="#home" class="footer-brand">Kewal</a>
+            <nav class="footer-links" aria-label="Social links">
+                <a href="https://github.com/userkewal64" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+                    <img src="https://cdn.simpleicons.org/github/181717" alt="" loading="lazy">
+                </a>
+                <a href="https://www.linkedin.com/in/kewal-dhungel-78097a371/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="" loading="lazy">
+                </a>
+                <a href="https://wa.me/9779749245832" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp">
+                    <img src="https://cdn.simpleicons.org/whatsapp/25D366" alt="" loading="lazy">
+                </a>
+                <a href="#home" class="back-to-top" aria-label="Back to top" title="Back to top">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4 3.5 12.5l1.42 1.42L11 7.83V21h2V7.83l6.08 6.09 1.42-1.42L12 4Z"/></svg>
+                </a>
+            </nav>
+            <small>© <span data-current-year>2026</span> Kewal. All rights reserved.</small>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
