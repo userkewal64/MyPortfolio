@@ -6,10 +6,22 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #0f172a;
     color: #f8fafc;
+}
+
+.home,
+.about-page,
+.skills-page,
+.projects-page,
+.contact-page {
+    scroll-margin-top: 110px;
 }
 
 /* Header */
@@ -54,12 +66,12 @@ body {
 
 /* Hero Section */
 .home {
-    min-height: 85vh;
+    min-height: calc(100vh - 84px);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 50px;
-    padding: 50px 8%;
+    gap: clamp(40px, 8vw, 100px);
+    padding: 45px 8%;
 }
 
 .home-content {
@@ -122,9 +134,11 @@ body {
     }
 
     .home {
+        min-height: calc(100vh - 130px);
         flex-direction: column-reverse;
         text-align: center;
-        padding: 40px 6%;
+        gap: 30px;
+        padding: 38px 6% 48px;
     }
 
     .home-content h1 {
@@ -471,6 +485,12 @@ body {
     gap: 25px;
 }
 
+.project-card:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc((100% - 25px) / 2);
+}
+
 .project-card {
     display: flex;
     flex-direction: column;
@@ -495,14 +515,21 @@ body {
 }
 
 .project-icon {
-    display: grid;
-    place-items: center;
-    width: 58px;
-    height: 58px;
-    background: #1e3350;
-    border-radius: 14px;
-    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 90px;
+    padding: 8px;
+    background: #f8fafc;
+    border-radius: 8px;
     margin-bottom: 22px;
+}
+
+.project-logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 .project-card h2 {
@@ -605,6 +632,12 @@ body {
 
     .project-grid {
         grid-template-columns: 1fr;
+    }
+
+    .project-card:nth-child(3) {
+        grid-column: auto;
+        justify-self: stretch;
+        width: 100%;
     }
 
     .project-card {

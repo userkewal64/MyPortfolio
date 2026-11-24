@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,37 +10,286 @@
 
     <!-- Header -->
     <header class="header">
-        <a href="#" class="logo">Kewal<span>.</span></a>
+        <a href="#home" class="logo">Kewal</a>
 
         <nav class="navbar">
-            <a href="index.html" class="active">Home</a>
-            <a href="about.html">About</a>
-            <a href="skills.html">Skills</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="home" id="home">
+    <main>
+        <!-- Hero Section -->
+        <section class="home" id="home">
+            <div class="home-content">
+                <h1>Hi, I'm Kewal Dhungel</h1>
+                <h2><b>Computer Engineering Student</b></h2>
+                <p>
+                    Learning web development, programming, DSA
+                    and building projects to improve my skills.
+                </p>
 
-        <div class="home-content">
-            <h1>Hi, I'm Kewal Dhungel</h1>
-            <h2><b>Computer Engineering Student</b></h2>
-            <p>
-                Learning web development, programming, DSA
-                and building projects to improve my skills.
+                <a href="#projects" class="btn">Explore My Work</a>
+            </div>
+
+            <div class="home-image">
+                <img src="Images/profile1.jpg" alt="Kewal's profile photo">
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about-page" id="about">
+            <div class="about-image">
+                <img src="Images/profile2.jpg" alt="Kewal's profile photo">
+            </div>
+
+            <div class="about-content">
+                <p class="intro">GET TO KNOW ME</p>
+
+                <h1>About <span>Me</span></h1>
+
+                <p>
+                    Hello! I'm Kewal, a Computer Engineering student
+                    passionate about technology, programming, and
+                    building useful digital solutions.
+                </p>
+
+                <p>
+                    I'm currently developing my skills in C++,
+                    web development and problem-solving. I believe
+                    in learning through practice and creating
+                    projects that turn ideas into reality.
+                </p>
+
+                <p>
+                    My goal is to explore different areas of
+                    technology, improve continuously and become
+                    a skilled software developer.
+                </p>
+
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills-page" id="skills">
+            <div class="skills-content">
+                <p class="intro">WHAT I'M LEARNING</p>
+
+                <h1>My <span>Skills</span></h1>
+
+                <h2>Technologies and Tools</h2>
+
+                <p>
+                    I'm continuously improving my programming and
+                    development skills through practice and projects.
+                </p>
+
+                <div class="skills-list">
+                    <div class="skill">
+                        <h3>C | C++</h3>
+                        <p>Programming Fundamentals and OOP</p>
+                    </div>
+
+                    <div class="skill">
+                        <h3>HTML | CSS | JavaScript</h3>
+                        <p>Web Development Fundamentals (In Progress) </p>
+                    </div>
+
+                    <div class="skill">
+                        <h3>Data Structures and Algorithms</h3>
+                        <p>Learning DSA one problem at a time, <br>
+                        building strong logic and growing as a problem solver. </p>
+                    </div>
+
+                    <div class="skill">
+                        <h3>Git &amp; GitHub</h3>
+                        <p>Version control and website hosting</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="projects-page" id="projects">
+            <section class="projects-intro">
+                <p class="intro">MY WORK &amp; LEARNING JOURNEY</p>
+                <h1>Featured <span>Projects</span></h1>
+                <p class="description">
+                    Here are some of the things I've built while
+                    exploring programming and web development.
+                    Each project helps me learn something new.
+                </p>
+            </section>
+
+            <section class="project-grid">
+                <article class="project-card">
+                    <div class="project-number">01 / AGRICULTURE</div>
+
+                    <div class="project-icon">
+                        <img
+                            class="project-logo"
+                            src="https://raw.githubusercontent.com/userkewal64/AgriVeya/898f5901ac518678811f68433206dbb424292548/Frontend/agrivia-logo.png"
+                            alt="AgriVeya logo">
+                    </div>
+
+                    <h2>AgriVeya</h2>
+
+                    <p>
+                        A climate-informed agricultural decision-support platform that helps explore crop rotation strategies using climate data, regional crop information and soil-health considerations.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span>Climate Data</span>
+                        <span>Crop Rotation</span>
+                        <span>Soil Health</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/userkewal64/AgriVeya"
+                           target="_blank" rel="noopener noreferrer">
+                            Repository ↗
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-number">02 / BUSINESS WEBSITE</div>
+
+                    <div class="project-icon">
+                        <img
+                            class="project-logo"
+                            src="https://raw.githubusercontent.com/userkewal64/SafalMauriPalan/a672c23ca91479c98f68517488429ba256787f96/Images/logo.png"
+                            alt="Safal Mauri Palan logo">
+                    </div>
+
+                    <h2>Safal Mauri Palan</h2>
+
+                    <p>
+                        A bilingual business website for a beekeeping enterprise, showcasing honey products, beekeeping services and business information through a user-friendly digital platform.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span>Bilingual Website</span>
+                        <span>Honey Products</span>
+                        <span>Beekeeping Services</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://safalmauripalan.com.np/"
+                           target="_blank" rel="noopener noreferrer">
+                            Live Website ↗
+                        </a>
+
+                        <a href="https://github.com/userkewal64/SafalMauriPalan"
+                           target="_blank" rel="noopener noreferrer">
+                            Repository ↗
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-number">03 / CURRENCY PLATFORM</div>
+
+                    <div class="project-icon">
+                        <img
+                            class="project-logo"
+                            src="https://raw.githubusercontent.com/userkewal64/RatesTrend/f5d8f3c603328302af99570185a7cb71c61f3f64/ratestrend-logo.svg"
+                            alt="RatesTrend logo">
+                    </div>
+
+                    <h2>RatesTrend</h2>
+
+                    <p>
+                        A currency exchange platform that provides real-time rate exploration, currency conversion, historical trends and interactive currency comparisons.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span>Real-Time Rates</span>
+                        <span>Currency Conversion</span>
+                        <span>Historical Trends</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/userkewal64/RatesTrend"
+                           target="_blank" rel="noopener noreferrer">
+                            Repository ↗
+                        </a>
+                    </div>
+                </article>
+            </section>
+
+            <section class="github-cta">
+                <h2>Want to see more?</h2>
+                <p>Explore my repositories and follow my learning journey.</p>
+
+                <a href="https://github.com/userkewal64"
+                   target="_blank" rel="noopener noreferrer"
+                   class="github-button">
+                    Visit My GitHub ↗
+                </a>
+            </section>
+        </section>
+
+        <!-- Contact -->
+        <section class="page contact-page" id="contact">
+            <h1>Contact <span>Me</span></h1>
+            <p class="subtitle">
+                Have a project idea or want to connect? Let's talk.
             </p>
 
-            <a href="projects.html" class="btn">Explore My Work</a>
-        </div>
+            <div class="card contact-card">
+                <h2>Get in Touch</h2>
 
-        <div class="home-image">
-            <img src="Images/profile1.jpg" alt="Kewal's profile photo">
-        </div>
+                <p>
+                    Email:
+                    <a href="https://mail.google.com/mail/?view=cm&amp;to=kewaldhungel321@gmail.com">
+                        kewaldhungel64@gmail.com
+                    </a>
+                </p>
 
-    </section>
+                <p>
+                    Linked In:
+                    <a href="https://www.linkedin.com/in/kewal-dhungel-78097a371/"
+                       target="_blank" rel="noopener noreferrer">
+                        Kewal Dhungel
+                    </a>
+                </p>
 
+                <p>
+                    Whatsapp:
+                    <a href="https://wa.me/9779749245832"
+                       target="_blank" rel="noopener noreferrer">
+                        9749245832
+                    </a>
+                </p>
+
+                <p>
+                    GitHub:
+                    <a href="https://github.com/userkewal64"
+                       target="_blank" rel="noopener noreferrer">
+                        Visit Profile
+                    </a>
+                </p>
+
+                <p>
+                    Website:
+                    <a href="https://safalmauripalan.com.np/"
+                       target="_blank" rel="noopener noreferrer">
+                        Safal Mauri Palan
+                    </a>
+                </p>
+
+                <p>
+                    I'm always interested in learning, collaborating
+                    and building useful projects.
+                </p>
+            </div>
+        </section>
+    </main>
 
 </body>
 </html>
