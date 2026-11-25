@@ -4,7 +4,7 @@
 
 Passionate about technology, software development, and creating meaningful digital experiences.
 
-🌐 **[Live Portfolio](YOUR_PORTFOLIO_URL)** · 💻 [GitHub](https://github.com/userkewal64) · 🔗 [LinkedIn](YOUR_LINKEDIN_URL)
+🌐 **[Live Portfolio](https://kewaldhungel.com.np)** · 💻 [GitHub](https://github.com/userkewal64) · 🔗 [LinkedIn](https://www.linkedin.com/in/kewal-dhungel-78097a371/)
 
 ---
 
